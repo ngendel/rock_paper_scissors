@@ -18,7 +18,7 @@ body{
     
 }
 
-.weapons{
+.selection{
     display: flex;
     justify-content: space-evenly;
     margin-top: 44px;
@@ -26,7 +26,7 @@ body{
     
 }
 
-.playerSelection{
+.selection button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     transition: 100ms;
 }
 
-.playerSelection:hover{
+.selection button:hover{
     transform: scale(1.5);
 }
 
@@ -51,10 +51,10 @@ img{
     justify-content: space-evenly;
     font-size: 52px;
     
-    
-    
-    
 
-    
+}
+
+comments{
+    display: flex;
 }
 

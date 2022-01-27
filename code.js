@@ -1,11 +1,9 @@
 'use strict';
 
 
-const computerSelection = computerPlay();
-
 function computerPlay() {
  let random = Math.floor(Math.random()*100);
- console.log(computerPlay);
+ (computerPlay);
   if (random <= 33) {
     let choiceRock = "rock";
     return choiceRock;
@@ -22,6 +20,17 @@ function computerPlay() {
   }
 
 } // only comes out if you put in on console
+//capture all nodes first 
+const selectionButtons = document.querySelectorAll('[data-selection]');
+  selectionButtons.forEach((selection) => {
+  select.addEventListener('click', e => {
+    return selection;
+  })
+})
+
+
+  
+
 
 
 function playRound(playerSelection, computerSelection) {
@@ -101,7 +110,17 @@ console.log(playRound(playerSelection, computerSelection));
 
 
 
-for (let i = 0; i < 5; i++) { //for loop to play 5 rounds of rps game.
-  const i = playRound()
-}
- 
+//for (let i = 0; i < 5; i++) { //for loop to play 5 rounds of rps game.
+ // const i = playRound()
+//}
+
+
+
+
+
+
+
+
+
+
+

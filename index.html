@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css" type="text/css" media="all">
-    <script type ="text/javascript" src="../rock_paper_scissors/code.js"> </script>
+    
     
 </head>
 
@@ -16,26 +16,27 @@
     </div>
 <div class="gameBox">
     <div class="text">Choose your weapon!</div>
-    <div class="weapons">
-        <button class="playerSelection" data-selection ="rock">🧱 </button> <!--img credit peter Döpper-->
+    <div class="selection"> 
+        <button class="options" data-selection="rock">🧱</button> <!--img credit peter Döpper-->
         
-        <button class="playerSelection" data-selection="paper">📰 </button> <!--img credit -->
-        <button class="playerSelection" data-selection="scissors">✂ </button>
+        <button class="options" data-selection="paper">📰 </button> <!--img credit -->
+        <button class="options" data-selection="scissors">✂ </button>
 
     </div>
 
     <div class="scores-container">
       <div>
         Your score: 
-          <span class="result-score">0</span>
+          <span class="result-score" data-your-score>0</span>
       </div>
       <div>
         Computer score:
-          <span class="result-score">0</span>
+          <span class="result-score" data-computer-score>0</span>
       </div>
         
     </div>
 
+    
 
 
 
@@ -45,5 +46,6 @@
 
     
 </body>
+<script type ='text/javascript' src='ui.js'> </script>
 
 </html>
